@@ -1,8 +1,17 @@
-// Get a reference to the button element
-const button = document.querySelector('.button');
+const bar = document.getElementById('bar');
+const close = document.getElementById('close');
+const nav = document.getElementById('navbar');
 
-// Add a click event listener to the button
-button.addEventListener('click', () => {
-    // Display an alert when the button is clicked
-    alert('Button clicked!');
-});
+if(bar){
+    bar.addEventListener('click',() => {
+        nav.classList.add('active');
+    })
+}
+
+
+if(close){
+    close.addEventListener('click',() => {
+        nav.classList.remove('active');
+    })
+
+}
